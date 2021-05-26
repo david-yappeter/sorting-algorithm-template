@@ -122,11 +122,9 @@ void QuickSort(int arr[], int left, int right) {
 //QuickSortPivot To Divide value in an Array into smaller and bigger
 int QuickSortPivot(int arr[], int left, int right) {
 	int pivot = arr[right];
-	int i = left, j = right - 1;
+	int i = left, j = right;
 	if(sortAsc){
 		pivot = arr[left];
-		i++;
-		j++;
 	}
 
 	while(i < j){
